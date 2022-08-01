@@ -96,7 +96,7 @@ img {
   }
 
   &-title {
-    font-size: 24px;
+    font-size: 36px;
     font-family: $font-title;
     font-weight: $font-bold;
     color: $black-color;
@@ -253,6 +253,52 @@ img {
 
     &-touch {
       background-color: $orange-color;
+    }
+  }
+}
+
+// ===== ABOUT SECTION =====
+.about {
+  &__container {
+    gap: 3rem;
+  }
+
+  &__data {
+    text-align: center;
+    justify-self: center;
+  }
+
+  &__group {
+    display: grid;
+    gap: 2rem;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    justify-items: flex-end;
+    align-items: flex-start;
+    gap: 2rem;
+
+    &-number,
+    &-title {
+      font-size: 36px;
+      font-family: $font-title;
+      font-weight: $font-bold;
+      color: $black-color;
+      line-height: $leading-title;
+    }
+
+    &-title {
+      font-size: 24px;
+      margin-bottom: $margin-1;
+    }
+
+    &-text {
+      font-size: 15px;
+      font-weight: $font-medium;
+      color: $grey-color;
+      line-height: $leading-text;
     }
   }
 }
