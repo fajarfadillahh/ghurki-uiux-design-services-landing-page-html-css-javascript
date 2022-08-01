@@ -270,6 +270,7 @@ img {
 
   &__group {
     display: grid;
+    justify-self: center;
     gap: 2rem;
   }
 
@@ -299,6 +300,36 @@ img {
       font-weight: $font-medium;
       color: $grey-color;
       line-height: $leading-text;
+    }
+  }
+}
+
+// ===== PARTNER SECTION =====
+.partner {
+  &__container {
+    gap: 1rem;
+  }
+
+  &__data {
+    text-align: center;
+    justify-self: center;
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-self: center;
+    align-items: center;
+    gap: 3.5rem 2.5rem;
+  }
+
+  &__img {
+    width: 130px;
+    filter: invert(0.7);
+    transition: $transition-400;
+
+    &:hover {
+      filter: invert(0);
     }
   }
 }
