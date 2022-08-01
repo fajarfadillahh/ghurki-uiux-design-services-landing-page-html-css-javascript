@@ -217,3 +217,32 @@ img {
     transform: scaleY(1);
   }
 }
+
+// ===== HOME SECTION =====
+.home {
+  &__container {
+    gap: 3rem;
+  }
+
+  &__title {
+    font-size: 60px;
+    line-height: 100%;
+    margin-bottom: $margin-2;
+  }
+
+  &__data,
+  &__img {
+    text-align: center;
+    justify-self: center;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &-touch {
+      background-color: $orange-color;
+    }
+  }
+}
