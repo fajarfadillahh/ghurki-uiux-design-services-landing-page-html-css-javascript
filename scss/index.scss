@@ -91,7 +91,7 @@ img {
     font-weight: $font-bold;
     text-transform: uppercase;
     color: $grey-color;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     margin-bottom: $margin-1;
   }
 
@@ -397,6 +397,45 @@ img {
       font-family: $font-title;
       font-weight: $font-bold;
       color: $black-color;
+    }
+  }
+}
+
+// ===== PORTFOLIO SECTION =====
+.portfolio {
+  &__group {
+    display: grid;
+    grid-template-columns: 0.9fr;
+    justify-content: center;
+    gap: 12rem;
+  }
+
+  &__content {
+    display: grid;
+    gap: 3rem;
+
+    &-title {
+      font-size: 24px;
+    }
+
+    &-button {
+      display: inline-flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      font-size: 15px;
+      font-family: $font-title;
+      font-weight: $font-semibold;
+      color: $black-color;
+
+      &:hover .portfolio__content-icon {
+        transform: translateX(5px);
+      }
+    }
+
+    &-icon {
+      display: inline-flex;
+      font-size: 1.3rem;
+      transition: $transition-400;
     }
   }
 }
