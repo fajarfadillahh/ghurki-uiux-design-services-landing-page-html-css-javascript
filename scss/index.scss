@@ -333,3 +333,70 @@ img {
     }
   }
 }
+
+// ===== OFFER SECTION =====
+.offer {
+  &__container {
+    gap: 1.5rem;
+  }
+
+  &__data {
+    text-align: center;
+    justify-self: center;
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.9fr));
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  &__content {
+    position: relative;
+    border-bottom: 2px solid rgba($color: #70747e, $alpha: 0.3);
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: $black-color;
+      transition: $transition-400 0.1s;
+    }
+
+    &:hover {
+      & .offer__content-img {
+        transform: scale(1.1);
+      }
+
+      &::before {
+        width: 100%;
+      }
+    }
+
+    &-overlay {
+      height: 230px;
+      overflow: hidden;
+    }
+
+    &-img {
+      width: 100%;
+      height: 100%;
+      transition: $transition-400;
+    }
+
+    &-data {
+      padding: 1.5rem 0;
+    }
+
+    &-title {
+      font-size: 24px;
+      font-family: $font-title;
+      font-weight: $font-bold;
+      color: $black-color;
+    }
+  }
+}
