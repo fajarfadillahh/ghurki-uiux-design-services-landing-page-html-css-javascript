@@ -439,3 +439,92 @@ img {
     }
   }
 }
+
+// ===== TESTIMONIAL SECTION =====
+.testimonial {
+  &__bg {
+    padding: 5rem 0;
+    background-color: #1f232b;
+  }
+
+  &__data {
+    text-align: center;
+    justify-self: center;
+  }
+
+  &__subtitle,
+  &__title {
+    color: $white-color;
+  }
+
+  &__content {
+    display: grid;
+    gap: 3rem;
+    padding: 3rem 2rem;
+    background-color: $white-color;
+    transition: $transition-400;
+
+    &-comment {
+      font-size: 15px;
+      font-weight: $font-medium;
+      color: $grey-color;
+      line-height: $leading-text;
+    }
+
+    &-profile {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    &-img {
+      width: 55px;
+    }
+
+    &-name {
+      font-size: 18px;
+      font-family: $font-title;
+      font-weight: $font-bold;
+      color: $black-color;
+      margin-bottom: $margin-0-5;
+    }
+
+    &-profession {
+      font-size: 14px;
+      font-weight: $font-medium;
+      color: $grey-color;
+    }
+
+    // swiper active
+    &.swiper-slide-active {
+      box-shadow: 13px 13px 0 $orange-color;
+    }
+  }
+
+  .swiper-wrapper {
+    padding: 1rem 0 3rem;
+  }
+
+  // swiper pagination
+  &__container {
+    overflow: hidden;
+
+    & .swiper-pagination {
+      position: initial;
+    }
+
+    & .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background-color: rgba($color: #ffffff, $alpha: 0.8);
+      transition: $transition-400;
+    }
+
+    & .swiper-pagination-bullet-active {
+      width: 2rem;
+      height: 10px;
+      background-color: $orange-color;
+      border-radius: 5rem;
+    }
+  }
+}
