@@ -575,3 +575,16 @@ img {
     }
   }
 }
+
+// ===== CONTACT SECTION =====
+.contact {
+  &__data,
+  &__button {
+    text-align: center;
+    justify-self: center;
+  }
+
+  &__button {
+    background-color: $orange-color;
+  }
+}
