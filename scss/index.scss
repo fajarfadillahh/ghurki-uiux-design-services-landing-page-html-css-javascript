@@ -1014,3 +1014,9 @@ img {
     width: 900px;
   }
 }
+
+// ===== ::SELECTION =====
+::selection {
+  background-color: rgba($color: #ff7a00, $alpha: 0.8);
+  color: $white-color;
+}
