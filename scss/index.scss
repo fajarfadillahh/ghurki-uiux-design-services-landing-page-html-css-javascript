@@ -417,6 +417,7 @@ img {
 
   &__content {
     display: grid;
+    justify-self: center;
     gap: 3rem;
 
     &-title {
@@ -740,5 +741,40 @@ img {
   .portfolio__content-img,
   .blog__content-img {
     width: 400px;
+  }
+}
+
+// width 640px
+@media screen and (min-width: 640px) {
+  .home__data,
+  .about__data,
+  .about__group,
+  .partner__data,
+  .offer__data,
+  .portfolio__content-data,
+  .testimonial__data,
+  .blog__data,
+  .blog__content-data,
+  .contact__data {
+    width: 500px;
+  }
+
+  .home__img,
+  .portfolio__content-img,
+  .blog__content-img {
+    width: 500px;
+  }
+
+  .home__buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .partner__group {
+    grid-template-columns: repeat(3, max-content);
+  }
+
+  .offer__content-overlay {
+    height: 300px;
   }
 }
