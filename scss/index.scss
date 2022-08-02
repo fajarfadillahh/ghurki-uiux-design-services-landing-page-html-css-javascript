@@ -778,3 +778,34 @@ img {
     height: 300px;
   }
 }
+
+// width 767px
+@media screen and (min-width: 767px) {
+  .header {
+    &__menu {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    &__list {
+      flex-direction: row;
+    }
+
+    &__link {
+      color: $black-color;
+
+      &::after {
+        background-color: $black-color;
+      }
+    }
+
+    &__button {
+      margin-top: 0;
+    }
+
+    &__toggle {
+      display: none;
+    }
+  }
+}
