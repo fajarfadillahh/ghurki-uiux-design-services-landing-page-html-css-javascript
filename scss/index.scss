@@ -686,3 +686,30 @@ img {
     line-height: $leading-text;
   }
 }
+
+// ===== SCROLLUP SECTION =====
+.scrollup {
+  position: fixed;
+  right: 1.5rem;
+  bottom: -100%;
+  width: 45px;
+  height: 45px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: $black-color;
+  font-size: 1.5rem;
+  color: $white-color;
+  transition: $transition-400;
+  z-index: $z-tooltip;
+
+  &:hover {
+    background-color: $orange-color;
+  }
+
+  // scroll action
+  &.scroll-action {
+    bottom: 3rem;
+  }
+}
